@@ -1,20 +1,17 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 
-const Index = () => {
+const Sightings = () => {
   return (
     <div className="space-y-8">
       <header className="text-center">
-        <h1 className="text-4xl font-bold">UFO Sightings in the USA</h1>
-        <p className="mt-4 text-lg text-muted-foreground">
-          Welcome to the ultimate resource for UFO sightings across the United States.
-        </p>
+        <h1 className="text-4xl font-bold">All UFO Sightings</h1>
       </header>
 
       <section>
         <Card>
           <CardHeader>
-            <CardTitle>Recent Sightings</CardTitle>
+            <CardTitle>Sightings List</CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-4">
@@ -32,17 +29,17 @@ const Index = () => {
                 <p className="font-semibold">May 5, 2023 - Phoenix, AZ</p>
                 <p className="text-muted-foreground">Strange lights were observed moving in a triangular formation.</p>
               </li>
+              <Separator />
+              <li>
+                <p className="font-semibold">June 10, 2023 - Los Angeles, CA</p>
+                <p className="text-muted-foreground">A fast-moving object was seen in the night sky.</p>
+              </li>
             </ul>
           </CardContent>
         </Card>
       </section>
-
-      <footer className="text-center text-muted-foreground">
-        <p>Contact us at info@ufosightingsusa.com</p>
-        <p>Follow us on social media</p>
-      </footer>
     </div>
   );
 };
 
-export default Index;
+export default Sightings;
